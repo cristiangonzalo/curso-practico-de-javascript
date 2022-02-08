@@ -13,12 +13,26 @@
     </header>
     <section>
         <h2>Calcula el área y el perímetro de un cuadrado:</h2>
-            <p><label for="medidaCuadrado">Escribe cuánto mide cada lado de tu cuadrado</label></p>
+            <p><label for="medidaLadoCuadrado">Escribe cuánto mide cada lado de tu cuadrado</label></p>
             <p><input type="number" id="medidaLadoCuadrado"/></p>
             <p><button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
             <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button></p>
-            <p><label id="resultado"></label></p>
+            <p><label id="resultadoCuadrado"></label></p>
         </form>
+    </section>
+    <section>
+        <h2>Calcula el área y el perímetro de un triángulo:</h2>
+            <p><label for="medidaLadoATriangulo">Escribe cuánto mide el lado 1 de tu triángulo</label></p>
+            <p><input type="number" id="medidaLadoATriangulo"/></p>
+            <p><label for="medidaLadoBTriangulo">Escribe cuánto mide el lado 2 de tu triángulo</label></p>
+            <p><input type="number" id="medidaLadoBTriangulo"/></p>
+            <p><label for="medidaBaseTriangulo">Escribe cuánto mide la base de tu triángulo</label></p>
+            <p><input type="number" id="medidaBaseTriangulo"/></p>
+            <p><label for="medidaAlturaTriangulo">Escribe cuánto mide la altura de tu triángulo</label></p>
+            <p><input type="number" id="medidaAlturaTriangulo"/></p>
+            <p><button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button></p>
+            <p><label id="resultadoTriangulo"></label></p>
     </section>
     <script src="./figuras.js"></script>    
 </body>

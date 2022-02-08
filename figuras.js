@@ -83,17 +83,32 @@ console.groupEnd();
 // Interactuamos con HTML
 
 function calcularPerimetroCuadrado(){
-    const input = document.getElementById("medidaLadoCuadrado");
-    const value = input.value;
-    const resultado = perimetroCuadrado(value);
-    console.log(`El perímetro del cuadrado es: ${resultado}`);
-    document.getElementById("resultado").innerHTML = `El perímetro del cuadrado es: ${resultado}`;
+    const medidaLadoCuadrado = document.getElementById("medidaLadoCuadrado").value;
+    const resultadoPerimetroCuadrado = perimetroCuadrado(Number(medidaLadoCuadrado));
+    console.log(`El perímetro del cuadrado es: ${resultadoPerimetroCuadrado}`);
+    document.getElementById("resultadoCuadrado").innerHTML = `El perímetro del cuadrado es: ${resultadoPerimetroCuadrado}`;
 }
 
 function calcularAreaCuadrado(){
-    const input = document.getElementById("medidaLadoCuadrado");
-    const value = input.value;
-    const resultado = areaCuadrado(value);
-    console.log(`El área del cuadrado es: ${resultado}`);
-    document.getElementById("resultado").innerHTML = `El área del cuadrado es: ${resultado}`;
+    const medidaLadoCuadrado = document.getElementById("medidaLadoCuadrado").value;
+    const resultadoAreaCuadrado = areaCuadrado(Number(medidaLadoCuadrado));
+    console.log(`El área del cuadrado es: ${resultadoAreaCuadrado}`);
+    document.getElementById("resultadoCuadrado").innerHTML = `El área del cuadrado es: ${resultadoAreaCuadrado}`;
+}
+
+function calcularPerimetroTriangulo(){
+    const medidaLadoATriangulo = document.getElementById("medidaLadoATriangulo").value;
+    const medidaLadoBTriangulo = document.getElementById("medidaLadoBTriangulo").value;
+    const medidaBaseTriangulo = document.getElementById("medidaBaseTriangulo").value;
+    const resultadoPerimetroTriangulo = perimetroTriangulo(Number(medidaLadoATriangulo), Number(medidaLadoBTriangulo), Number(medidaBaseTriangulo));
+    console.log(`El perímetro del triángulo es: ${resultadoPerimetroTriangulo}`);
+    document.getElementById("resultadoTriangulo").innerHTML = `El perímetro del triángulo es: ${resultadoPerimetroTriangulo}`;
+}
+
+function calcularAreaTriangulo(){
+    const medidaBaseTriangulo = document.getElementById("medidaBaseTriangulo").value;
+    const medidaAlturaTriangulo = document.getElementById("medidaAlturaTriangulo").value;
+    const resultadoAreaTriangulo = areaTriangulo(Number(medidaBaseTriangulo), Number(medidaAlturaTriangulo));
+    console.log(`El área del triángulo es: ${resultadoAreaTriangulo}`);
+    document.getElementById("resultadoTriangulo").innerHTML = `El área del triángulo es: ${resultadoAreaTriangulo}`;
 }
