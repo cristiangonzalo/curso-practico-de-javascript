@@ -5,13 +5,13 @@ console.group("Cuadrado");
 // console.log("Los lados del cuadrado miden: "+ladoCuadrado+ " cm");
 
 function perimetroCuadrado(lado){
-    return console.log('El perímetro del cuadrado es: '+lado * 4 +'cm');
+    return (lado * 4) ;
 }
 
 // console.log("El perímetro del cuadrado es: "+perimetroCuadrado+" cm");
 
 function areaCuadrado(lado){
-    return console.log('El área del cuadrado es: '+ lado * lado +'cm^2');
+    return (lado * lado) ;
 }
 
 // console.log("El área del cuadrado es: "+areaCuadrado+ " cm2");
@@ -30,14 +30,14 @@ console.group("Triángulo");
 // console.log("La altura del triángulo es de: "+alturaTriangulo+" cm");
 
 function perimetroTriangulo(lado1, lado2, base){
-    return console.log("El perímetro del triángulo es: "+ (lado1 + lado2 + base) +" cm");
+    return (lado1 + lado2 + base) ;
 }
 
 // const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
 // console.log("El perímetro del triángulo es: "+perimetroTriangulo+" cm");
 
 function areaTriangulo(base, altura){
-    return console.log("El área del triángulo es de: "+ ((base * altura) / 2) +" cm^2");
+    return ((base * altura) / 2) ;
 }
 
 // const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2;
@@ -67,8 +67,7 @@ const _pi_ = Math.PI;
 
 function perimetroCirculo(radio){
     const diametro = diametroCirculo(radio);
-    console.log("El diámetro del círculo es: "+ (diametro) +" cm");
-    return console.log("El perímetro del círculo es: "+ (diametro * _pi_) +" cm");
+    return (diametro * _pi_) ;
 }
 
 // Área
@@ -80,3 +79,21 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+// Interactuamos con HTML
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("medidaLadoCuadrado");
+    const value = input.value;
+    const resultado = perimetroCuadrado(value);
+    console.log(`El perímetro del cuadrado es: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `El perímetro del cuadrado es: ${resultado}`;
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("medidaLadoCuadrado");
+    const value = input.value;
+    const resultado = areaCuadrado(value);
+    console.log(`El área del cuadrado es: ${resultado}`);
+    document.getElementById("resultado").innerHTML = `El área del cuadrado es: ${resultado}`;
+}

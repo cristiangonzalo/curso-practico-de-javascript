@@ -13,11 +13,11 @@
     </header>
     <section>
         <h2>Calcula el área y el perímetro de un cuadrado:</h2>
-        <form>
-            <label>Escribe cuánto mide cada lado de tu cuadrado</label>
-            <input type="number" />
-            <button>Calcular Perímetro</button>
-            <button>Calcular el área</button>
+            <p><label for="medidaCuadrado">Escribe cuánto mide cada lado de tu cuadrado</label></p>
+            <p><input type="number" id="medidaLadoCuadrado"/></p>
+            <p><button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular Área</button></p>
+            <p><label id="resultado"></label></p>
         </form>
     </section>
     <script src="./figuras.js"></script>    
