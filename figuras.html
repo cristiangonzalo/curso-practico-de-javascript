@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geométricas | Curso Práctico de Javascript en Platzi</title>
-</head>
+</head> 
 <body>
     <header>
         <h1>Figuras Geométricas</h1>
@@ -33,6 +33,26 @@
             <p><button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro</button>
             <button type="button" onclick="calcularAreaTriangulo()">Calcular Área</button></p>
             <p><label id="resultadoTriangulo"></label></p>
+    </section>
+    <section>
+        <h2>Calcula el diámetro, perímetro y área de un círculo:</h2>
+            <p><label for="medidaRadioCirculo">Escribe cuánto mide el radio de tu círculo</label></p>
+            <p><input type="number" id="medidaRadioCirculo"/></p>
+            <p>
+                <button type="button" onclick="calcularDiametroCirculo()">Calcular Diámetro</button>
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perímetro</button>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular Área Círculo</button>
+            </p>
+            <p><label id="resultadoCirculo"></label></p>
+    </section>
+    <section>
+        <h2>Calcula la altura de un triángulo isóceles:</h2>
+            <p><label for="medidaLadoTrianguloIsoceles">Escribe cuánto mide el lado de tu triángulo isóceles</label></p>
+            <p><input type="number" id="medidaLadoTrianguloIsoceles"/></p>
+            <p><label for="medidaBaseTrianguloIsoceles">Escribe cuánto mide la base de tu triángulo isóceles</label></p>
+            <p><input type="number" id="medidaBaseTrianguloIsoceles"/></p>
+            <p><button type="button" onclick="calcularAlturaTrianguloIsoceles()">Calcular Altura Isóceles</button>
+            <p><label id="resultadoTrianguloIsoceles"></label></p>
     </section>
     <script src="./figuras.js"></script>    
 </body>
