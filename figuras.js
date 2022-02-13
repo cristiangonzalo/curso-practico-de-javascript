@@ -96,14 +96,14 @@ function calcularPerimetroCuadrado(){
     const medidaLadoCuadrado = document.getElementById("medidaLadoCuadrado").value;
     const resultadoPerimetroCuadrado = perimetroCuadrado(Number(medidaLadoCuadrado));
     console.log(`El perímetro del cuadrado es: ${resultadoPerimetroCuadrado} cm`);
-    document.getElementById("resultadoCuadrado").innerHTML = `El perímetro del cuadrado es: ${resultadoPerimetroCuadrado} cm`;
+    document.getElementById("resultadoCuadrado").innerText = `El perímetro del cuadrado es: ${resultadoPerimetroCuadrado} cm`;
 }
 
 function calcularAreaCuadrado(){
     const medidaLadoCuadrado = document.getElementById("medidaLadoCuadrado").value;
     const resultadoAreaCuadrado = areaCuadrado(Number(medidaLadoCuadrado));
     console.log(`El área del cuadrado es: ${resultadoAreaCuadrado} cm^2`);
-    document.getElementById("resultadoCuadrado").innerHTML = `El área del cuadrado es: ${resultadoAreaCuadrado} cm^2`;
+    document.getElementById("resultadoCuadrado").innerText = `El área del cuadrado es: ${resultadoAreaCuadrado} cm^2`;
 }
 
 function calcularPerimetroTriangulo(){
@@ -112,7 +112,7 @@ function calcularPerimetroTriangulo(){
     const medidaBaseTriangulo = document.getElementById("medidaBaseTriangulo").value;
     const resultadoPerimetroTriangulo = perimetroTriangulo(Number(medidaLadoATriangulo), Number(medidaLadoBTriangulo), Number(medidaBaseTriangulo));
     console.log(`El perímetro del triángulo es: ${resultadoPerimetroTriangulo} cm`);
-    document.getElementById("resultadoTriangulo").innerHTML = `El perímetro del triángulo es: ${resultadoPerimetroTriangulo} cm`;
+    document.getElementById("resultadoTriangulo").innerText = `El perímetro del triángulo es: ${resultadoPerimetroTriangulo} cm`;
 }
 
 function calcularAreaTriangulo(){
@@ -120,28 +120,28 @@ function calcularAreaTriangulo(){
     const medidaAlturaTriangulo = document.getElementById("medidaAlturaTriangulo").value;
     const resultadoAreaTriangulo = areaTriangulo(Number(medidaBaseTriangulo), Number(medidaAlturaTriangulo));
     console.log(`El área del triángulo es: ${resultadoAreaTriangulo} cm^2`);
-    document.getElementById("resultadoTriangulo").innerHTML = `El área del triángulo es: ${resultadoAreaTriangulo} cm^2`;
+    document.getElementById("resultadoTriangulo").innerText = `El área del triángulo es: ${resultadoAreaTriangulo} cm^2`;
 }
 
 function calcularDiametroCirculo(){
     const medidaRadioCirculo = document.getElementById("medidaRadioCirculo").value;
     const resultadoDiametroCirculo = diametroCirculo(Number(medidaRadioCirculo));
     console.log(`El diámetro del círculo es: ${resultadoDiametroCirculo} cm`);
-    document.getElementById("resultadoCirculo").innerHTML = `El diámetro del círculo es: ${resultadoDiametroCirculo} cm`;
+    document.getElementById("resultadoCirculo").innerText = `El diámetro del círculo es: ${resultadoDiametroCirculo} cm`;
 }
 
 function calcularPerimetroCirculo(){
     const medidaRadioCirculo = document.getElementById("medidaRadioCirculo").value;
     const resultadoPerimetroCirculo = perimetroCirculo(Number(medidaRadioCirculo));
     console.log(`El perímetro del círculo es: ${resultadoPerimetroCirculo} cm`);
-    document.getElementById("resultadoCirculo").innerHTML = `El perímetro del círculo es: ${resultadoPerimetroCirculo} cm`;
+    document.getElementById("resultadoCirculo").innerText = `El perímetro del círculo es: ${resultadoPerimetroCirculo} cm`;
 }
 
 function calcularAreaCirculo(){
     const medidaRadioCirculo = document.getElementById("medidaRadioCirculo").value;
     const resultadoAreaCirculo = areaCirculo(Number(medidaRadioCirculo));
     console.log(`El área del círculo es: ${resultadoAreaCirculo} cm^2`);
-    document.getElementById("resultadoCirculo").innerHTML = `El área del círculo es: ${resultadoAreaCirculo} cm^2`;
+    document.getElementById("resultadoCirculo").innerText = `El área del círculo es: ${resultadoAreaCirculo} cm^2`;
 }
 
 function calcularAlturaTrianguloIsoceles(){
@@ -149,5 +149,5 @@ function calcularAlturaTrianguloIsoceles(){
     const medidaBaseTrianguloIsoceles = document.getElementById("medidaBaseTrianguloIsoceles").value;
     const resultadoAlturaTrianguloIsoceles = alturaTrianguloIsoceles(medidaLadoTrianguloIsoceles, medidaBaseTrianguloIsoceles);
     console.log(`La altura del triángulo isóceles es: ${resultadoAlturaTrianguloIsoceles} cm`);
-    document.getElementById("resultadoTrianguloIsoceles").innerHTML = `La altura del triángulo isóceles es: ${resultadoAlturaTrianguloIsoceles} cm`;
+    document.getElementById("resultadoTrianguloIsoceles").innerText = `La altura del triángulo isóceles es: ${resultadoAlturaTrianguloIsoceles} cm`;
 }
