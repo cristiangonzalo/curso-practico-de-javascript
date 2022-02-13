@@ -12,14 +12,26 @@
         <p>Este es el segundo taller del Curso Práctico de Javascript</p>
     </header>
     <p>
+    <section>    
         <h2>Cálcula el precio a pagar de tus productos con descuentos</h2>
-        <p>
+        <form>
             <p><label for="precioProducto">Escribe el precio de tu producto</label></p>
             <p><input type="number" id="precioProducto"/></p>
             <p><label for="descuentoProducto">Escribe el descuento de tu producto</label></p>
             <p><input type="number" id="descuentoProducto"/></p>
             <p><button type="button" onclick="calcularPrecioFinal()">Calcular el precio con descuento</button></p>
             <p><div id="resultadoPrecioFinal"></div></p>
+        </form>
+    </section>
+    <section>    
+        <h2>Cálcula el precio a pagar de tus productos con cupones y descuentos</h2>
+        <form>
+            <p><label for="precioProductoConCupon">Escribe el precio de tu producto</label></p>
+            <p><input type="number" id="precioProductoConCupon"/></p>
+            <p><label for="descripcionCupon">Escribe Cupón de descuento</label></p>
+            <p><input type="text" id="descripcionCupon"/></p>
+            <p><button type="button" onclick="calcularPrecioFinalConCupon()">Calcular el precio con descuento</button></p>
+            <p><div id="resultadoPrecioFinalConCupon"></div></p>
         </form>
     </section>
     <script type="text/javascript" src="./descuentos.js"></script>
